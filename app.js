@@ -32,7 +32,7 @@ app.post("/", function(req, res) {
   });
   const run = async () => {
     try {
-      const response = await mailchimp.lists.batchListMembers("6d5b3a6e59", userData);
+      const response = await mailchimp.lists.batchListMembers("e8732eb52a", userData);
       console.log(response);
       res.sendFile(__dirname + "/success.html");
     } catch (err) {
@@ -52,7 +52,7 @@ app.listen(process.env.PORT || 3000, function() {
   console.log("server is running on port 3000");
 });
 //api key
-//476fac92d39e3ab59787fc76d31b7b07-us1
+//476fac92d39e3ab59787fc76d31b7b07-us1 476fac92d39e3ab59787fc76d31b7b07-us1
 
 //list
 //6d5b3a6e59
